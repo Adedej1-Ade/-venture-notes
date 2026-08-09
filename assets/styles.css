@@ -610,6 +610,38 @@ a.card:hover {
   line-height: 1.72;
   color: rgba(233, 233, 237, .8);
 }
+.sources {
+  margin-top: 52px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(233, 233, 237, .1);
+}
+.sources-title {
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+.sources-list {
+  margin: 0;
+  padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.sources-list li { padding-left: 4px; }
+.sources-list a { color: var(--accent-light); }
+.sources-list a:hover { color: var(--accent-lighter); }
+.sources-domain { color: var(--text-muted); font-size: 12.5px; }
+.sources-domain::before { content: "\00b7\00a0"; }
+
+/* When Sources precedes the foot, tighten the gap between the two rules. */
+.sources + .article-foot { margin-top: 32px; }
+
 .article-foot {
   margin-top: 56px;
   padding-top: 28px;
