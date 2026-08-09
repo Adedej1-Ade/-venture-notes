@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://venture-notes.vercel.app/sitemap.xml

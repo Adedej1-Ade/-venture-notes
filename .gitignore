@@ -1,0 +1,22 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node (none needed to build this site, but keep it out if anyone adds tooling)
+node_modules/
+npm-debug.log*
+
+# Vercel
+.vercel/
+
+# Claude Code local settings
+.claude/
+
+# Working files from the design handoff (not part of the deployed site)
+extracted/
+_*.js
+_*.html
+_victor.jpg
