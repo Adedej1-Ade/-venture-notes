@@ -19,8 +19,6 @@ const POSTS = [
   { section: "trends", seed: 27, badge: "Coming soon", title: "Fintech",            meta: "Write-up in progress", byline: "Victor", href: null },
   { section: "trends", seed: 43, badge: "Coming soon", title: "Climate",            meta: "Write-up in progress", byline: "Victor", href: null },
   { section: "trends", seed: 58, badge: "Coming soon", title: "Cybersecurity",      meta: "Write-up in progress", byline: "Victor", href: null },
-  { section: "trends", seed: 71, badge: "Coming soon", title: "Healthtech",         meta: "Write-up in progress", byline: "Victor", href: null },
-  { section: "trends", seed: 94, badge: "Coming soon", title: "B2B Infrastructure", meta: "Write-up in progress", byline: "Victor", href: null },
 
   // ── Watchlist (02) — radar motif ─────────────────────────────────────────
   { section: "watchlist", seed: 113, badge: "Coming soon", title: "Healthtech",     meta: "Write-up in progress", byline: "", href: null },
