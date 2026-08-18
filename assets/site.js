@@ -28,8 +28,8 @@ const POSTS = [
 
   // ── Post-Mortems (03) — peak-and-fall motif ──────────────────────────────
   { section: "postmortems", seed: 163, badge: "Post-Mortem", title: "WeSabi: 10 Years at Seed", meta: "Marketplace · Nigeria", byline: "Aug 2026", href: "posts/wesabi-10-years-at-seed.html" },
-  { section: "postmortems", seed: 181, badge: "Coming soon", title: "Climate",      meta: "Write-up in progress", byline: "", href: null },
-  { section: "postmortems", seed: 199, badge: "Coming soon", title: "Fintech",      meta: "Write-up in progress", byline: "", href: null },
+  { section: "postmortems", seed: 181, badge: "Coming soon", title: "Next case study",  meta: "Another company that stalled", byline: "", href: null },
+  { section: "postmortems", seed: 199, badge: "Coming soon", title: "In the pipeline",  meta: "Another company that stalled", byline: "", href: null },
 ];
 
 /* Per-section artwork settings: motif + hue/saturation of the card ground. */
