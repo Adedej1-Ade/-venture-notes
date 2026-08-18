@@ -26,6 +26,7 @@ const POSTS = [
   { section: "watchlist", seed: 147, badge: "Coming soon", title: "Cybersecurity",  meta: "Write-up in progress", byline: "", href: null },
 
   // ── Post-Mortems (03) — peak-and-fall motif ──────────────────────────────
+  { section: "postmortems", seed: 217, badge: "Post-Mortem", title: "Beyond the Product: Defensibility in African B2B Fintech", meta: "Fintech · Africa", byline: "Aug 2026", href: "posts/beyond-the-product.html" },
   { section: "postmortems", seed: 163, badge: "Post-Mortem", title: "WeSabi: 10 Years at Seed", meta: "Marketplace · Nigeria", byline: "Aug 2026", href: "posts/wesabi-10-years-at-seed.html" },
   { section: "postmortems", seed: 181, badge: "Coming soon", title: "Climate",      meta: "Write-up in progress", byline: "", href: null },
   { section: "postmortems", seed: 199, badge: "Coming soon", title: "Fintech",      meta: "Write-up in progress", byline: "", href: null },
