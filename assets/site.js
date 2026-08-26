@@ -22,6 +22,7 @@ const POSTS = [
   { section: "trends", seed: 58, badge: "Coming soon", title: "Cybersecurity",      meta: "Write-up in progress", byline: "Victor", href: null },
 
   // ── Watchlist (02) — radar motif ─────────────────────────────────────────
+  { section: "watchlist", seed: 121, badge: "Watchlist",   title: "Kera Health: Addressing Africa’s Healthcare Data Gap", meta: "Aug 2026 · Healthtech", byline: "Victor", href: "posts/kera-health.html" },
   { section: "watchlist", seed: 113, badge: "Coming soon", title: "Healthtech",     meta: "Write-up in progress", byline: "", href: null },
   { section: "watchlist", seed: 129, badge: "Coming soon", title: "Fintech",        meta: "Write-up in progress", byline: "", href: null },
   { section: "watchlist", seed: 147, badge: "Coming soon", title: "Cybersecurity",  meta: "Write-up in progress", byline: "", href: null },
