@@ -325,6 +325,7 @@ function initOrbits() {
   if (!cv) return;
   const ctx = cv.getContext("2d");
   const dim = cv.dataset.orbit === "article"; // article variant is slightly dimmer
+  const light = document.body.classList.contains("theme-light"); // light write-up pages: dark ink on white
   let w = 0, h = 0;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   const rs = () => { w = cv.clientWidth; h = cv.clientHeight; cv.width = w * dpr; cv.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
@@ -350,27 +351,27 @@ function initOrbits() {
     ctx.clearRect(0, 0, w, h);
     const cx = w * 0.74, cy = h * 0.52, R = Math.min(w, h);
     const core = ctx.createRadialGradient(cx, cy, 0, cx, cy, R * 0.2);
-    core.addColorStop(0, "rgba(179,169,230," + coreA + ")");
-    core.addColorStop(1, "rgba(179,169,230,0)");
+    core.addColorStop(0, light ? "rgba(0,0,0,0.05)" : "rgba(179,169,230," + coreA + ")");
+    core.addColorStop(1, light ? "rgba(0,0,0,0)" : "rgba(179,169,230,0)");
     ctx.fillStyle = core;
     ctx.beginPath(); ctx.arc(cx, cy, R * 0.2, 0, 6.2832); ctx.fill();
-    ctx.fillStyle = "rgba(233,233,237," + dotA + ")";
+    ctx.fillStyle = light ? "rgba(0,0,0,0.4)" : "rgba(233,233,237," + dotA + ")";
     ctx.beginPath(); ctx.arc(cx, cy, dotR, 0, 6.2832); ctx.fill();
     ctx.lineWidth = 1;
     rings.forEach((ring, ri) => {
       const rad = ring.r * R;
-      ctx.strokeStyle = "rgba(233,233,237," + ringA + ")";
+      ctx.strokeStyle = light ? "rgba(0,0,0,0.05)" : "rgba(233,233,237," + ringA + ")";
       ctx.beginPath(); ctx.arc(cx, cy, rad, 0, 6.2832); ctx.stroke();
       for (let i = 0; i < ring.n; i++) {
         const a = ring.ph + t * ring.spd + (i / ring.n) * 6.2832;
         const x = cx + Math.cos(a) * rad, y = cy + Math.sin(a) * rad;
-        ctx.strokeStyle = "rgba(145,132,217," + (spokeBase - ri * spokeStep).toFixed(3) + ")";
+        ctx.strokeStyle = light ? "rgba(0,0,0," + (0.05 - ri * 0.008).toFixed(3) + ")" : "rgba(145,132,217," + (spokeBase - ri * spokeStep).toFixed(3) + ")";
         ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(x, y); ctx.stroke();
         const s = holderBase - ri * 0.5;
         const pulse = 0.5 + 0.5 * Math.sin(t * 0.02 + i * 1.3 + ri);
-        ctx.fillStyle = "rgba(207,200,242," + (pulseBase + pulse * pulseAmp).toFixed(3) + ")";
+        ctx.fillStyle = light ? "rgba(0,0,0," + (0.10 + pulse * 0.10).toFixed(3) + ")" : "rgba(207,200,242," + (pulseBase + pulse * pulseAmp).toFixed(3) + ")";
         ctx.beginPath(); ctx.arc(x, y, s, 0, 6.2832); ctx.fill();
-        if (ri === 0 && !dim) {
+        if (ri === 0 && !dim && !light) {
           ctx.strokeStyle = "rgba(179,169,230,.3)";
           ctx.beginPath(); ctx.arc(x, y, s + 5 + pulse * 3, 0, 6.2832); ctx.stroke();
         }
