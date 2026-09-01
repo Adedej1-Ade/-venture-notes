@@ -17,6 +17,7 @@ const POSTS = [
   // ── Trends (01) — market-curves motif, steel-teal ────────────────────────
   { section: "trends", seed: 11,  badge: "Trends",     title: "The Emerging Data Layer in Healthcare", meta: "Aug 2026 · Healthtech",   byline: "Victor", href: "posts/emerging-data-layer-in-healthcare.html" },
   { section: "trends", seed: 217, badge: "Trends",     title: "Beyond the Product: Defensibility in African B2B Fintech", meta: "Aug 2026 · Fintech", byline: "Victor", href: "posts/beyond-the-product.html" },
+  { section: "trends", seed: 233, badge: "Trends",     title: "Execution Is the New Moat: PAYGo Solar and Battery Swapping in Africa", meta: "Aug 2026 · Climate", byline: "Victor", href: "posts/execution-is-the-new-moat.html" },
   { section: "trends", seed: 27, badge: "Coming soon", title: "Next write-up",       meta: "In progress", byline: "", href: null },
 
   // ── Watchlist (02) — radar motif ─────────────────────────────────────────
