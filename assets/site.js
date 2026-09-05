@@ -26,6 +26,7 @@ const POSTS = [
 
   // ── Post-Mortems (03) — peak-and-fall motif ──────────────────────────────
   { section: "postmortems", seed: 163, badge: "Post-Mortem", title: "WeSabi: 10 Years at Seed", meta: "Marketplace · Nigeria", byline: "Jul 2026", href: "posts/wesabi-10-years-at-seed.html" },
+  { section: "postmortems", seed: 251, badge: "Post-Mortem", title: "Mobisol: How Credit Risk Beat Good Capital", meta: "PAYGo Solar · East Africa", byline: "Aug 2026", href: "posts/mobisol-credit-risk.html" },
   { section: "postmortems", seed: 181, badge: "Coming soon", title: "Next write-up",   meta: "In progress", byline: "", href: null },
 ];
 
