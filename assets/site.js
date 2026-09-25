@@ -18,6 +18,7 @@ const POSTS = [
   { section: "trends", seed: 11,  badge: "Trends",     title: "The Emerging Data Layer in Healthcare", meta: "Jul 2026 · Healthtech",   byline: "Victor", href: "posts/emerging-data-layer-in-healthcare.html" },
   { section: "trends", seed: 217, badge: "Trends",     title: "Beyond the Product: Defensibility in African B2B Fintech", meta: "Aug 2026 · Fintech", byline: "Victor", href: "posts/beyond-the-product.html" },
   { section: "trends", seed: 233, badge: "Trends",     title: "Execution Is the New Moat: PAYGo Solar and Battery Swapping in Africa", meta: "Sep 2026 · Climate", byline: "Victor", href: "posts/execution-is-the-new-moat.html" },
+  { section: "trends", seed: 269, badge: "Trends",     title: "Nigeria’s Electricity Tariff Reform: Diverging Implications for Solar and EVs", meta: "Sep 2026 · Climate", byline: "Victor", href: "posts/nigeria-electricity-tariff-reform.html" },
   { section: "trends", seed: 27, badge: "Coming soon", title: "Next write-up",       meta: "In progress", byline: "", href: null },
 
   // ── Watchlist (02) — radar motif ─────────────────────────────────────────
